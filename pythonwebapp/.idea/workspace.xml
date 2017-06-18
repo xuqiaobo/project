@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/static/transwarp/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25622255">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -65,17 +65,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbmodel.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dbmodel.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/static/transwarp/dbmodel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.479452">
-              <caret line="134" column="23" selection-start-line="134" selection-start-column="23" selection-end-line="134" selection-end-column="23" />
+            <state vertical-scroll-proportion="-1.8032787">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
-                <element signature="e#55#69#0" expanded="true" />
-                <marker date="1497781235409" expanded="true" signature="1900:1931" placeholder="insert into missing_value... " />
-                <marker date="1497781235409" expanded="true" signature="2474:2490" placeholder="select missi... missing_value" />
-                <marker date="1497781235409" expanded="true" signature="2474:2492" placeholder="select from missing_value" />
-                <marker date="1497781235409" expanded="true" signature="4916:4928" placeholder="delete from " />
+                <element signature="e#55#90#0" expanded="true" />
+                <marker date="1497791742809" expanded="true" signature="1779:1810" placeholder="insert into missing_value... " />
+                <marker date="1497791742809" expanded="true" signature="2353:2369" placeholder="select missi... missing_value" />
+                <marker date="1497791742809" expanded="true" signature="2353:2371" placeholder="select from missing_value" />
+                <marker date="1497791742809" expanded="true" signature="4796:4808" placeholder="delete from " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbconnection.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/static/transwarp/dbconnection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+              <folding>
+                <element signature="e#61#75#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,8 +122,9 @@
         <option value="$PROJECT_DIR$/www/static/transwarp/constants.py" />
         <option value="$PROJECT_DIR$/www/static/transwarp/dbmetaclass.py" />
         <option value="$PROJECT_DIR$/www/static/transwarp/test.py" />
-        <option value="$PROJECT_DIR$/www/static/transwarp/dbmodel.py" />
         <option value="$PROJECT_DIR$/www/static/transwarp/entity.py" />
+        <option value="$PROJECT_DIR$/www/static/transwarp/dbconnection.py" />
+        <option value="$PROJECT_DIR$/www/static/transwarp/dbmodel.py" />
       </list>
     </option>
   </component>
@@ -121,7 +134,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="521" />
+    <option name="x" value="160" />
+    <option name="y" value="26" />
     <option name="width" value="1614" />
     <option name="height" value="1092" />
   </component>
@@ -450,7 +464,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="521" y="0" width="1614" height="1092" extended-state="0" />
+    <frame x="160" y="26" width="1614" height="1092" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19148937" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -552,20 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/static/transwarp/dbmodel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.479452">
-          <caret line="134" column="23" selection-start-line="134" selection-start-column="23" selection-end-line="134" selection-end-column="23" />
-          <folding>
-            <element signature="e#55#69#0" expanded="true" />
-            <marker date="1497781235409" expanded="true" signature="1900:1931" placeholder="insert into missing_value... " />
-            <marker date="1497781235409" expanded="true" signature="2474:2490" placeholder="select missi... missing_value" />
-            <marker date="1497781235409" expanded="true" signature="2474:2492" placeholder="select from missing_value" />
-            <marker date="1497781235409" expanded="true" signature="4916:4928" placeholder="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/static/transwarp/dbmetaclass.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -592,9 +592,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/static/transwarp/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25622255">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/static/transwarp/dbconnection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding>
+            <element signature="e#61#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/static/transwarp/dbmodel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8032787">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#55#90#0" expanded="true" />
+            <marker date="1497791742809" expanded="true" signature="1779:1810" placeholder="insert into missing_value... " />
+            <marker date="1497791742809" expanded="true" signature="2353:2369" placeholder="select missi... missing_value" />
+            <marker date="1497791742809" expanded="true" signature="2353:2371" placeholder="select from missing_value" />
+            <marker date="1497791742809" expanded="true" signature="4796:4808" placeholder="delete from " />
+          </folding>
         </state>
       </provider>
     </entry>

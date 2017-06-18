@@ -1,9 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 # dbmodel.py
-import MySQLdb
-
-import constants
+from dbconnection import Connection
 from dbmetaclass import ModelMetaClass
 
 cur = None
@@ -12,8 +10,7 @@ conn = None
 
 def create_engine():
     global conn
-    conn = MySQLdb.connect(constants.host, constants.user, constants.password, constants.DATABASE_NAME, constants.port,
-                           charset='utf8')
+    conn = Connection.get_connection()
     global cur
     if cur is None:
         cur = conn.cursor()
@@ -130,7 +127,7 @@ class Model(dict):
             cur.execute(sql)
             result = cur.fetchall()
             return result
-        except StandardError,e:
+        except StandardError, e:
             print e
             return None
 
@@ -172,3 +169,7 @@ class Model(dict):
             conn.rollback()
             print 'delete error happens'
         return False
+
+    # 对象消解时释放连接
+    def __del__(self):
+        Connection.close_connection()
